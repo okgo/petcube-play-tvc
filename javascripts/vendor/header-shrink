@@ -1,0 +1,40 @@
+(function() {
+  $((function() {
+    var fadeMenu, shrinkProcess;
+    shrinkProcess = function() {
+      var $orderButton;
+      if (device.desktop()) {
+        $orderButton = $(".header.main .order-button");
+        if (Petcube.getCurrentScroll() >= Header.shrinkPosition) {
+          $(".header.main").addClass("shrinked");
+          if ($orderButton.text() !== $orderButton.data("title-shrinked")) {
+            return $orderButton.text($orderButton.data("title-shrinked"));
+          }
+        } else {
+          $(".header.main").removeClass("shrinked");
+          if ($orderButton.text() !== $orderButton.data("title")) {
+            return $orderButton.text($orderButton.data("title"));
+          }
+        }
+      }
+    };
+    fadeMenu = function() {
+      var $video;
+      $video = $("#video");
+      if ($video.find("iframe").is(":visible") && Petcube.getCurrentScroll() >= $video.offset().top && Petcube.getCurrentScroll() <= $video.offset().top + $video.outerHeight()) {
+        return $(".header.main").addClass("faded");
+      } else {
+        return $(".header.main").removeClass("faded");
+      }
+    };
+    $(window).scroll(function() {
+      fadeMenu();
+      return shrinkProcess();
+    });
+    $(window).resize(function() {
+      return shrinkProcess();
+    });
+    shrinkProcess();
+  })());
+
+}).call(this);

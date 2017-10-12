@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html class='no-js' id='nojs'>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<title>
+Petcube: Remote Wi-Fi Pet Camera | Pet Monitor System
+</title>
+<link href='https://d1fje6txxik8rh.cloudfront.net/favicon.ico' rel='icon' type='image/x-icon'>
+<link href='https://d1fje6txxik8rh.cloudfront.net/apple-touch-icon.png' rel='shortcut icon' sizes='16x16' type='image/png'>
+<link href='https://d1fje6txxik8rh.cloudfront.net/apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
+<link href="../stylesheets/all-39eefacb.css" rel="stylesheet" />
+</head>
+<body class='support-search-result-page search-results-not-found'>
+<header class='header main'>
+<div class='region-selector' id='region-selector' style='height: 0px;'>
+<div class='content padding'>
+<i class='icon-plus-v3 close'></i>
+<h2>Choose your region</h2>
+<div class='area'>
+<h4>Americas</h4>
+<ul class='inline-block first-col'>
+<li>
+<a data-country='US' href='/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/us.svg'>USA
+<span>– English</span>
+</a>
+</li>
+</ul>
+<ul class='inline-block second-col'>
+<li>
+<a data-country='CA' href='/en-ca/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/ca.svg'>Canada
+<span>– English</span>
+</a>
+</li>
+</ul>
+<ul class='inline-block third-col'>
+<li>
+<a data-country='CA' href='/fr-ca/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/ca.svg'>Canada
+<span>– Français</span>
+</a>
+</li>
+</ul>
+</div>
+<div class='area'>
+<h4>Europe</h4>
+<ul class='inline-block first-col'>
+<li>
+<a data-country='AT' href='/de-at/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/at.svg'>Austria
+<span>– Deutsch</span>
+</a>
+</li>
+<li>
+<a data-country='BE' href='/nl-be/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/be.svg'>Belgium
+<span>– Nederlands</span>
+</a>
+</li>
+<li>
+<a data-country='BE' href='/fr-be/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/be.svg'>Belgium
+<span>– Français</span>
+</a>
+</li>
+<li>
+<a data-country='BE' href='/de-be/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/be.svg'>Belgium
+<span>– Deutsch</span>
+</a>
+</li>
+<li>
+<a data-country='FR' href='/fr-fr/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/fr.svg'>France
+<span>– Français</span>
+</a>
+</li>
+<li>
+<a data-country='DE' href='/de-de/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/de.svg'>Germany
+<span>– Deutsch</span>
+</a>
+</li>
+</ul>
+<ul class='inline-block second-col'>
+<li>
+<a data-country='IT' href='/it-it/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/it.svg'>Italy
+<span>– Italiano</span>
+</a>
+</li>
+<li>
+<a data-country='LU' href='/de-lu/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/lu.svg'>Luxembourg
+<span>– Deutsch</span>
+</a>
+</li>
+<li>
+<a data-country='LU' href='/fr-lu/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/lu.svg'>Luxembourg
+<span>– Français</span>
+</a>
+</li>
+<li>
+<a data-country='NL' href='/nl-nl/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/nl.svg'>Netherlands
+<span>– Nederlands</span>
+</a>
+</li>
+<li>
+<a data-country='PL' href='/pl-pl/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/pl.svg'>Poland
+<span>– Polski</span>
+</a>
+</li>
+<li>
+<a data-country='ES' href='/pt-pt/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/pt.svg'>Portugal
+<span>– Português</span>
+</a>
+</li>
+</ul>
+<ul class='inline-block third-col'>
+<li>
+<a data-country='ES' href='/es-es/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/es.svg'>Spain
+<span>– Español</span>
+</a>
+</li>
+<li>
+<a data-country='CH' href='/de-ch/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/ch.svg'>Switzerland
+<span>– Deutsch</span>
+</a>
+</li>
+<li>
+<a data-country='CH' href='/it-ch/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/ch.svg'>Switzerland
+<span>– Italiano</span>
+</a>
+</li>
+<li>
+<a data-country='CH' href='/fr-ch/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/ch.svg'>Switzerland
+<span>– Français</span>
+</a>
+</li>
+<li>
+<a data-country='UA' href='/uk-ua/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/ua.svg'>Ukraine
+<span>– Українська</span>
+</a>
+</li>
+<li>
+<a data-country='GB' href='/en-gb/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/gb.svg'>United Kingdom
+<span>– English</span>
+</a>
+</li>
+</ul>
+</div>
+<div class='area'>
+<h4>ASIA & PACIFIC</h4>
+<ul class='inline-block first-col'>
+<li>
+<a data-country='AU' href='/en-au/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/au.svg'>Australia
+<span>– English</span>
+</a>
+</li>
+<li>
+<a data-country='NZ' href='/en-nz/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/nz.svg'>New Zealand
+<span>– English</span>
+</a>
+</li>
+</ul>
+<ul class='inline-block second-col'>
+<li>
+<a data-country='JP' href='/ja-jp/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/jp.svg'>Japan
+<span>– 日本語</span>
+</a>
+</li>
+</ul>
+<ul class='inline-block third-col'>
+<li>
+<a data-country='KR' href='/en-kr/'><img alt='' class='locale-flag' src='https://d1fje6txxik8rh.cloudfront.net/images/locales/kr.svg'>South Korea
+<span>– English</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='banner slim default-slim'>
+<div class='content padding'>
+<div class='col col-9 warranty'>
+<ul>
+<li>Free US Standard Shipping</li>
+<li>Free 45 Day Returns</li>
+<li>1 Year Warranty</li>
+</ul>
+</div>
+<div class='col col-3 media-icons desktop-view'>
+<a href='https://www.facebook.com/petcube.inc' target='_blank'>
+<i class='icon icon-facebook-v2 transitionable'></i>
+</a>
+<a href='https://www.instagram.com/petcube/' target='_blank'>
+<i class='icon icon-instagram transitionable'></i>
+</a>
+<a href='https://twitter.com/Petcube' target='_blank'>
+<i class='icon icon-twitter transitionable'></i>
+</a>
+<a href='https://www.youtube.com/user/Petcube' target='_blank'>
+<i class='icon icon-youtube transitionable'></i>
+</a>
+<a href='https://www.pinterest.com/petcube/pins/' target='_blank'>
+<i class='icon icon-pinterest transitionable'></i>
+</a>
+</div>
+</div>
+</div>
+<div class='header-menu shadowed'>
+<div class='content table'>
+<div class='logo-cell'>
+<a class='logo' href='/' id='homepage'></a>
+</div>
+<nav class='main-menu'>
+<ul id='main-menu'>
+<li class='extended first' id='products'>
+<a class='external' href='#products-menu'>
+<div class='item-text-wraper'>Products</div>
+<i class='icon icon-plus-v3 mobile-view inline'></i>
+</a>
+<div class='products-menu sub-main-menu animated fadeOut' id='products-menu' style='display: none;'>
+<nav>
+<ul>
+<li class='inline-block animated' style='visibility: hidden;'>
+<a class='product-play border-box ga' data-ga-action='product menu clicked' data-ga-category='home' data-ga-label='play' href='/play/'>
+<div class='products-item-content'>
+<div class='h7'>Petcube Play</div>
+<p>Interactive Pet Cam</p>
+</div>
+</a>
+</li>
+<li class='inline-block animated' style='visibility: hidden;'>
+<a class='product-bites border-box ga' data-ga-action='product menu clicked' data-ga-category='home' data-ga-label='bites' href='/bites/'>
+<div class='products-item-content'>
+<div class='h7'>Petcube Bites</div>
+<p>Interactive Treat Cam</p>
+</div>
+</a>
+</li>
+<li class='inline-block animated' style='visibility: hidden;'>
+<a class='product-care border-box ga' data-ga-action='product menu clicked' data-ga-category='home' data-ga-label='care' href='/care/'>
+<div class='products-item-content'>
+<div class='h7'>Petcube Care</div>
+<p>Video & Alerts</p>
+</div>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</li>
+<li>
+<a class='external' href='/mobile-app/'>
+<div class='item-text-wraper'>App</div>
+</a>
+</li>
+<li>
+<a class='external' href='/support/'>
+<div class='item-text-wraper'>Support</div>
+<i class='icon-zoom-in mobile-view inline'></i>
+</a>
+</li>
+<li class='extended'>
+<a class='external' href=''>
+<div class='item-text-wraper'>Why Petcube</div>
+<i class='icon icon-plus-v3 mobile-view inline'></i>
+</a>
+<div class='sub-main-menu animated fadeOut' style='display: none;'>
+<nav>
+<ul>
+<li class='inline-block animated' style='visibility: hidden;'>
+<a href='/reviews/'>Reviews</a>
+</li>
+<li class='inline-block animated' style='visibility: hidden;'>
+<a href='/about-us/'>About Us</a>
+</li>
+<li class='inline-block animated' style='visibility: hidden;'>
+<a href='/shop-insta/'>#Petcube</a>
+</li>
+</ul>
+</nav>
+</div>
+</li>
+<li>
+<a class='external' href='/blog/'>
+<div class='item-text-wraper'>PetFeed</div>
+<i class='icon-zoom-in mobile-view inline'></i>
+</a>
+</li>
+<li>
+<a class='external' href='/store/'>
+<div class='item-text-wraper'>Store</div>
+<div class='hover animated'></div>
+</a>
+</li>
+</ul>
+<div class='locale-switcher mobile'>
+<a href='#'>
+US
+<i class='icon icon-drop-down'></i>
+</a>
+</div>
+<div class='user-profile mobile'>
+<a class='header-sign-in external' href='/home/profile/'>
+<div class='avatar icon icon-login'></div>
+</a>
+</div>
+</nav>
+<div class='locale-switcher desktop'>
+<a href='#'>
+US
+<i class='icon icon-drop-down'></i>
+</a>
+</div>
+<div class='user-profile desktop'>
+<a class='header-sign-in external' href='/home/profile/'>
+<div class='avatar icon icon-login'></div>
+</a>
+</div>
+<div class='cart desktop last'>
+<a href='/cart/'>
+<i class='icon icon-shopping-cart'></i>
+<span class='count'>0</span>
+</a>
+</div>
+<div>
+<a class='burger-button'>
+<i class='icon icon-burger-v2'></i>
+</a>
+<div class='cart mobile'>
+<a href='/cart/'>
+<i class='icon icon-shopping-cart'></i>
+<span class='count'>0</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<main class='container'>
+<section class='support-search--small'>
+<div class='wrapper'>
+<div class='content padding'>
+<form action='/support/search-results.html' class='support-search__form' method='get' role='form'>
+<input id='support-search__field' placeholder='Search questions, keywords, topics' required='required' type='search'>
+<button class='support-search__submit' type='submit'>
+<i class='icon icon-search'></i>
+</button>
+<div class='support-search__searchbox'>
+<p>Popular</p>
+<a href="#" class="item"><div class='support-topics--top'>
+<div class='support-topic__product--small'>petcube bites</div>
+<div class='support-topic__product--small'>
+<i class='icon icon-video-camera'></i>
+video
+</div>
+</div>
+<div class='title'>Will I be able to connect to Petcube if I'm travelling overseas?</div>
+</a><a href="#" class="item"><div class='support-topics--top'>
+<div class='support-topic__product--small'>petcube play</div>
+</div>
+<div class='title'>Petcube Play Specs and System Requirements</div>
+</a><a href="#" class="item"><div class='support-topics--top'>
+<div class='support-topic__product--small'>petcube play</div>
+</div>
+<div class='title'>Setting up Petcube Play camera</div>
+</a></div>
+</form>
+</div>
+</div>
+</section>
+<section class='support-search-results'>
+<div class='wrapper'>
+<div class='content padding no-padding-mobile'>
+<div class='row clearfix'>
+<div class='col col-12'>
+<div class='support-breadcrumbs'>
+<a href='index.html'>Petcube Help</a>
+<span class='separator'>></span>
+<span>Search results</span>
+</div>
+</div>
+</div>
+<div class='row clearfix'>
+<div class='col col-9'>
+<div class='support-search-results__notfound'>
+<h6>Nothing matches your search</h6>
+<p>
+Check popular articles below or
+<a href='index.html'>try another search</a>
+</p>
+</div>
+<div class='support-search-results__list'>
+<div class='support-search-results__item'>
+<a href="#" class="clearfix"><div class='wrap'>
+<div class='support-topics--top'>
+<div class='support-topic__product'>petcube bites</div>
+</div>
+<div class='title'>Will I be able to connect to Petcube if I'm travelling overseas?</div>
+<p>Petcube Bites is an interactive Wi-Fi treat camera for pet owners. It allows them to watch, talk to, treat and train their pets from anywhere from a smartphone</p>
+</div>
+</a></div>
+<div class='support-search-results__item'>
+<a href="#" class="clearfix"><div class='wrap'>
+<div class='support-topics--top'>
+<div class='support-topic__product'>petcube bites</div>
+</div>
+<div class='title'>Petcube Play Specs and System Requirements</div>
+<p>Petcube Play features: 138° wide angle view, 1080p HD video , treat dispenser 2-way audio, night vision, 3x digital zoom, sound and motion alerts</p>
+</div>
+</a></div>
+<div class='support-search-results__item'>
+<a href="#" class="clearfix"><div class='wrap'>
+<div class='support-topics--top'>
+<div class='support-topic__product'>petcube bites</div>
+</div>
+<div class='title'>Treat recommendations</div>
+<p>Treats should be uniform in size, no smaller than 0.3 inches and no larger than 1 inch in length. The treat hopper can fit up to 100 treats</p>
+</div>
+</a></div>
+<div class='support-search-results__item'>
+<a href="#" class="clearfix"><div class='wrap'>
+<div class='support-topics--top'>
+<div class='support-topic__product'>petcube bites</div>
+</div>
+<div class='title'>Is there a desktop or web application?</div>
+<p>At the moment, Petcube application is available for Android and iOS devices only. We are always looking for ways to make our products easier to use.</p>
+</div>
+</a></div>
+<div class='support-search-results__item'>
+<a href="#" class="clearfix"><div class='wrap'>
+<div class='support-topics--top'>
+<div class='support-topic__product'>Petcube play</div>
+</div>
+<div class='title'>Box contents</div>
+<p>Petcube Play camera, 10 ft usb-C cable, 110/240 US plug power adapter with 5V output 2A current, a start guide, two bags of Wellness treats</p>
+</div>
+</a></div>
+</div>
+</div>
+<div class='col col-3'>
+<div class='desktop-view'>
+<div class='support-team-contacts'>
+<h5>Still need help? Our Support Team is here for you.</h5>
+<a class='support-contacts__item email' href='#' id='support-popup-open'>
+<div class='h7'>Email us</div>
+<p>support@petcube.com</p>
+</a>
+<a class='support-contacts__item phone' href='tel:1-844-747-2823'>
+<div class='h7'>Call us</div>
+<p>1-844-747-2823</p>
+</a>
+<a class='support-contacts__item chat' href='#'>
+<div class='h7'>Live chat</div>
+<p>Available 24/7</p>
+</a>
+</div>
+</div>
+<div class='mobile-view'>
+<section class='support-section support-contacts'>
+<h3>
+Need more help?
+<span>Contact Petcube Support</span>
+</h3>
+<div class='row clearfix type-3'>
+<div class='col col-4'>
+<a class='support-contacts__item email' href='#' id='support-popup-open'>
+<div class='h7'>Email us</div>
+<p>support@petcube.com</p>
+</a>
+</div>
+<div class='col col-4'>
+<a class='support-contacts__item phone' href='tel:1-844-747-2823'>
+<div class='h7'>Call us</div>
+<p>1-844-747-2823</p>
+</a>
+</div>
+<div class='col col-4'>
+<a class='support-contacts__item chat' href='#'>
+<div class='h7'>Live chat</div>
+<p>Available 24/7</p>
+</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<footer class='clearfix' id='footer'>
+<div id='footer-mailing'>
+<div class='content padding'>
+<div class='footer-stamp'></div>
+<div class='footer-mailing-text'>
+<h5 class='mailing-desc'>
+Stay tuned to our
+<span class='desktop-br'></span>
+updates and special offers
+</h5>
+<form action='/subscribe/newsletter/petcube.com_form/' class='pure-form' method='POST'>
+<input name='email' placeholder='Your email' required='required' type='email'>
+<button class='yellow pulse' type='submit'>Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+<nav id='sitemap'>
+<div class='content padding'>
+<div class='row clearfix'>
+<div class='col-2 col-mobile-6'>
+<p class='h7'>Products</p>
+<ul>
+<li>
+<p>
+<a href='#'>Store</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/play/'>Play</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/bites/'>Bites</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/care/'>Care</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/mobile-app/'>App</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/petcube-for-shelters/'>Shelters</a>
+</p>
+</li>
+</ul>
+</div>
+<div class='col-2 col-mobile-6'>
+<p class='h7'>Social</p>
+<ul>
+<li>
+<p>
+<a href='#'>Facebook</a>
+</p>
+</li>
+<li>
+<p>
+<a href='#'>Instagram</a>
+</p>
+</li>
+<li>
+<p>
+<a href='#'>Youtube</a>
+</p>
+</li>
+<li>
+<p>
+<a href='#'>Twitter</a>
+</p>
+</li>
+<li>
+<p>
+<a href='#'>Pinterest</a>
+</p>
+</li>
+</ul>
+</div>
+<div class='clearfix-mobile'></div>
+<div class='col-2 col-mobile-6'>
+<p class='h7'>Resources</p>
+<ul>
+<li>
+<p>
+<a href='/find-a-store/'>Store Locator</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/refer-friend/'>Refer Friend</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/affiliates/'>Affiliates</a>
+</p>
+</li>
+<li>
+<a class='articles-tooltip tooltipstered' href='#'>
+Resources &amp; Tips
+<i class='icon-drop-down'></i>
+</a>
+<div class='hidden'>
+<div class='articles-popup' id='articles-popup'>
+<i class='icon-close'></i>
+<div class='left inline-block'>
+<ul class='inline-block'>
+<li>
+<strong>Pet care resources</strong>
+</li>
+<li>
+<a href='/blog/dog-separation-anxiety/'>Dog Separation Anxiety</a>
+</li>
+<li>
+<a href='/blog/pet-behavior-problems/'>Pet Behavior Problems &amp; Solutions</a>
+</li>
+<li>
+<a href='/blog/leaving-pets-home-alone/'>Leaving Pets Home Alone</a>
+</li>
+<li>
+<a href='/blog/pet-sitting-alternatives/'>Pet Sitting Alternatives</a>
+</li>
+<li>
+<a href='/blog/healthy-treats/'>Healthy Treats</a>
+</li>
+</ul>
+<ul class='inline-block'>
+<li>
+<strong>Interactive pet camera</strong>
+</li>
+<li>
+<a href='/blog/puppy-camera/'>Puppy Camera</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='col-2 col-mobile-6'>
+<p class='h7'>Press</p>
+<ul>
+<li>
+<p>
+<a href='/mediakit/'>Media</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/news/'>News</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/blog/'>Blog</a>
+</p>
+</li>
+</ul>
+</div>
+<div class='clearfix-mobile'></div>
+<div class='col-2 col-mobile-6'>
+<p class='h7'>Support</p>
+<ul>
+<li>
+<p>
+<a href='#'>FAQ</a>
+</p>
+</li>
+<li>
+<p>
+<a href='#'>Video Tutorials</a>
+</p>
+</li>
+<li>
+<p>
+<a href='#'>Use Cases</a>
+</p>
+</li>
+<li>
+<p>
+<a href='#'>Reviews</a>
+</p>
+</li>
+<li>
+<p>
+<a href='#'>Suport Contact</a>
+</p>
+</li>
+</ul>
+</div>
+<div class='col-2 col-mobile-6'>
+<p class='h7'>About</p>
+<ul>
+<li>
+<p>
+<a href='/about-us/'>About</a>
+</p>
+</li>
+<li>
+<p>
+<a href='/careers/'>Career</a>
+</p>
+</li>
+<li>
+<p>
+<a href='mailto:info@petcube.com' id='viewcontacts'>Contact</a>
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<div id='terms'>
+<div class='content padding'>
+<nav class='terms-nav'>
+<ul>
+<li>
+<p class='p2'>
+<a href='/docs/warranty/'>Warranty</a>
+</p>
+</li>
+<li>
+<p class='p2'>
+<a href='/docs/shipping-and-returns/'>Shipping &amp; Returns</a>
+</p>
+</li>
+<li>
+<p class='p2'>
+<a href='/docs/terms-of-use/'>Terms of Use</a>
+</p>
+</li>
+<li>
+<p class='p2'>
+<a href='/docs/privacy-policy/'>Privacy Policy</a>
+</p>
+</li>
+</ul>
+</nav>
+<p class='p2 terms-desc'>Petcube is an interactive Wi-Fi pet camera that helps you stay connected to your pets when you are not at home. Petcube pet monitor system lets you watch, talk and play laser games with your dog or cat from anywhere using your smartphone. You can share access to your pet video cam with your friends, family or anyone else on Petcube network.</p>
+</div>
+</div>
+<div id='copyright'>
+<div class='content padding'>
+<div class='footer-info'>
+<div class='row clearfix'>
+<div class='col-3'>
+<a class='footer-logo' href='/'></a>
+</div>
+<div class='col-9'>
+<p class='copyright p2'>Copyright © 2017 Petcube, Inc. All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<div class="windows"><div id="newsletter" class="modal-container gray"><div class="modal-box border-box slideInUpPopUp email"><h2 class="h1">Sign up, then save!</h2><form action="/subscribe/newsletter/petcube.com_form/" method="POST"><p style="font-size: 21px;">Get $10 Off your entire order now</p><br><input name="email" required="required" placeholder="Your email" type="email"><button type="submit" class="yellow pulse">Subscribe</button></form><a class="close element" href="#"></a></div><div class="modal-box border-box slideInUpPopUp pet-choose hidden"><h2 class="h1">Thanks for subscribing!</h2><p>For relevant tips, tell us what kind of pet(s) you have</p><form action="/subscribe/newsletter/petcube.com_form/" method="POST"><input name="email" type="hidden"><ul><li class="inline-block checkbox"><p><label for="type_cat">Cat</label></p><input id="type_cat" name="petType[]" value="Cat" type="checkbox"><label for="type_cat"></label></li><li class="inline-block checkbox"><p><label for="type_dog">Dog</label></p><input id="type_dog" name="petType[]" value="Dog" type="checkbox"><label for="type_dog"></label></li><li class="inline-block checkbox"><p><label for="type_other">Other</label></p><input id="type_other" name="petType[]" value="Other" type="checkbox"><label for="type_other"></label></li></ul><button type="submit" class="yellow pulse">No pets</button></form><a class="close element" href="#"></a></div><div class="modal-box border-box slideInUpPopUp thanks hidden"><h2 class="h1">Thanks for subscribing!</h2><p>We'll keep you posted</p><a class="close element" href="#"></a></div></div><div id="video-popup" class="embed-popup modal-container gray" style="display: none;"><div class="modal-box top"><a class="close" href="#"></a><div class="video"><div id="popup-player"></div></div></div></div><div id="ru-order-popup" class="embed-popup modal-container"><div class="modal-box border-box"><img data-rjs="2" src="/images/release/backgrounds/ru-popup-bg.png?v=0.8.1"><div class="modal-box-content"><a class="close" href="#"></a><p>buy_popup.text</p><p class="gray">buy_popup.phones</p><p class="gray">buy_popup.contacts</p><p>buy_popup.foot</p></div></div></div><div id="post-ks-popup" class="embed-popup modal-container gray"><div class="modal-box border-box sign"><img src="/images/post-kickstarter/play-bites-sign@2x.jpg?v=0.8.1"><div class="modal-box-content"><a class="close" href="#"></a><br><h2 class="h1">Please <br>Leave Your Email</h2><br><br><form id="postksform" action="/signup_petcubeplay_waitlist/"><input name="email" required="required" placeholder="Your email" type="email"><button type="submit" class="yellow pulse">SIGN UP</button></form></div></div><div class="modal-box border-box thanks" style="display: none;"><img src="/images/post-kickstarter/play-bites-thanks@2x.jpg?v=0.8.1"><div class="modal-box-content"><a class="close" href="#"></a><br><h2 class="h1">Thank you!</h2><p>You'll be notified when Petcube Bites is available for pre-order.</p></div></div></div><div id="feedback-popup" class="embed-popup modal-container gray"><div class="modal-box"><a class="close" href="#"></a><div class="embed"></div></div></div><div id="alert" class="modal-container"><div class="modal-box"><p class="title"></p><p class="text"></p><button class="yellow">Okay</button></div></div></div>
+<div class='support-popup modal-container gray' id='support-popup'>
+<div class='modal-box top'>
+<div class='modal-box-content clearfix'>
+<a class='close' href='#'></a>
+<div class='heading'>
+<h5>Email Petcube</h5>
+<p>Drop us a line, we generally respond within twelve hours</p>
+</div>
+<form action='/support/' class='support-form'>
+<div class='support-form__row input-item'>
+<input placeholder='Your email*' required='required' type='email'>
+</div>
+<div class='support-form__row input-item'>
+<input placeholder='Subject*' required='required' type='text'>
+</div>
+<div class='support-form__row input-item'>
+<textarea placeholder='What&#39;s your question, comment, or issue?*' required='required'></textarea>
+</div>
+<div class='support-form__row files' id='files'>
+<div class='dropzone'>
+<a href='#'>Add files</a>
+&nbsp;
+<span>or drop files here</span>
+</div>
+<div class='file-names'></div>
+<input id='support_request_files' multiple='multiple' type='file'>
+</div>
+<div class='support-form__row platforms'>
+<p>Please choose your mobile platform</p>
+<div class='support-form__radio'>
+<div class='input-item inline-block active'>
+<input checked='checked' class='download-form-radio1 radio' id='download-form-radio1' name='support_request[deviceType]' required='required' type='radio' value='android'>
+<label class='download-radio1label' for='download-form-radio1' id='download-radio1label'>Android</label>
+</div>
+<div class='input-item inline-block active'>
+<input class='download-form-radio2 radio' id='download-form-radio2' name='support_request[deviceType]' required='required' type='radio' value='ios'>
+<label class='download-radio2label' for='download-form-radio2' id='download-radio2label'>iOS</label>
+</div>
+</div>
+</div>
+<button class='yellow' type='submit'>SUBMIT</button>
+</form>
+</div>
+</div>
+</div>
+
+<script src="../javascripts/support-5bf5f21b.js"></script>
+</body>
+</html>

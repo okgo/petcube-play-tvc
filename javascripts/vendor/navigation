@@ -1,0 +1,36 @@
+(function() {
+  $(function() {
+    var $mainMenu;
+    $mainMenu = $("#main-menu");
+    $mainMenu.find("li a:not(.external)").each(function(i, el) {
+      var $el, id;
+      $el = $(el);
+      id = $el.attr("href");
+      if (!$(id).length) {
+        return $el.addClass("external").prop("href", $("#homepage").attr("href") + id);
+      }
+    });
+    $mainMenu.find("li").not(".active").hover((function() {
+      $(this).find(".hover").show().addClass("bouncingSlideInUp").removeClass("bouncingSlideOutDown");
+    }), function() {
+      $(this).find(".hover").toggleClass("bouncingSlideOutDown").removeClass("bouncingSlideInUp");
+    });
+    $(".scroll-nav:not(.external)").on("click", function(e) {
+      e.preventDefault();
+      $($(this).attr("href")).scrollTo();
+      if ($(".main-menu").is(".burger-menu")) {
+        return $("a.burger-button").trigger("touchstart");
+      }
+    });
+    $("a.burger-button").on("touchstart click", function(event) {
+      event.preventDefault();
+      $(this).toggleClass("active");
+      $(".main-menu").toggleClass("burger-menu");
+      return $("body").toggleClass("noscroll");
+    });
+    if ($.url().param("reviews")) {
+      return $("#quotes").scrollTo();
+    }
+  });
+
+}).call(this);

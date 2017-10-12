@@ -1,0 +1,18 @@
+(function() {
+  (function($, window, document) {
+    $(window).load(function() {
+      return $(".preload").addClass("loaded");
+    });
+    $("#viewpartners").click(function(e) {
+      e.preventDefault();
+      $(".partners-container").slideToggle("slow");
+      return $(".contacts-container").hide();
+    });
+    return $("#viewcontacts").click(function(e) {
+      e.preventDefault();
+      $(".contacts-container").slideToggle("slow");
+      return $(".partners-container").hide();
+    });
+  })(jQuery, window, document);
+
+}).call(this);

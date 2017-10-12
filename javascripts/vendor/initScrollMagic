@@ -1,0 +1,216 @@
+(function() {
+  var $controller, $counterContainer, $hashNavItem, hashNavItemCount, nextArrow, prevArrow, startScroll;
+
+  $controller = new ScrollMagic.Controller();
+
+  startScroll = function() {
+    var scene_1, scene_2, scene_3, scene_4, sene_10, sene_5, sene_6, sene_7, sene_8, sene_9, tween_10, tween_5, tween_6, tween_7, tween_8, tween_9;
+    scene_1 = new ScrollMagic.Scene({
+      triggerElement: '.how-to-use',
+      triggerHook: 0,
+      offset: -100,
+      duration: $('.bites-slider__container .item').outerHeight() * 2.2
+    }).setPin('.bites-slider__hash').on('progress', function(e) {
+      var progress;
+      progress = e.progress * 100 + '%';
+      return $('.bites-slider__progress span').height(progress);
+    }).addTo($controller);
+    scene_2 = new ScrollMagic.Scene({
+      triggerElement: '#sec1',
+      triggerHook: 'onEnter',
+      duration: $('#sec1').height() * 1.8
+    }).setClassToggle('#cur1', 'current').addTo($controller);
+    scene_3 = new ScrollMagic.Scene({
+      triggerElement: '#sec2',
+      duration: $('#sec2').height()
+    }).setClassToggle('#cur2', 'current').addTo($controller);
+    scene_4 = new ScrollMagic.Scene({
+      triggerElement: '#sec3',
+      duration: $('#sec3').height() * 2
+    }).setClassToggle('#cur3', 'current').addTo($controller);
+    tween_5 = new TimelineMax().fromTo("#sec1 img", 1, {
+      opacity: 0
+    }, {
+      opacity: 1
+    }).fromTo("#sec1 h3", .5, {
+      x: '-25px',
+      opacity: 0
+    }, {
+      x: '0',
+      opacity: 1
+    }).fromTo("#sec1 p", .5, {
+      x: '-25px',
+      opacity: 0
+    }, {
+      x: '0',
+      opacity: 1
+    });
+    sene_5 = new ScrollMagic.Scene({
+      triggerElement: '.how-to-use',
+      reverse: false
+    }).setTween(tween_5).addTo($controller);
+    tween_6 = new TimelineMax().fromTo("#sec2 video", 1, {
+      opacity: 0
+    }, {
+      opacity: 1
+    }).fromTo("#sec2 h3", .5, {
+      x: '-25px',
+      opacity: 0
+    }, {
+      x: '0',
+      opacity: 1
+    }).fromTo("#sec2 p", .5, {
+      x: '-25px',
+      opacity: 0
+    }, {
+      x: '0',
+      opacity: 1
+    });
+    sene_6 = new ScrollMagic.Scene({
+      triggerElement: '#sec2',
+      reverse: false
+    }).setTween(tween_6).addTo($controller);
+    tween_7 = new TimelineMax().fromTo("#sec3 img", 1, {
+      opacity: 0
+    }, {
+      opacity: 1
+    }).fromTo("#sec3 h3", .5, {
+      x: '-25px',
+      opacity: 0
+    }, {
+      x: '0',
+      opacity: 1
+    }).fromTo("#sec3 p", .5, {
+      x: '-25px',
+      opacity: 0
+    }, {
+      x: '0',
+      opacity: 1
+    });
+    sene_7 = new ScrollMagic.Scene({
+      triggerElement: '#sec3',
+      reverse: false
+    }).setTween(tween_7).addTo($controller);
+    tween_8 = new TimelineMax().fromTo(".specs-slide span.bites", 0.8, {
+      top: '-100%'
+    }, {
+      top: 0
+    });
+    sene_8 = new ScrollMagic.Scene({
+      triggerElement: '.specs-slide',
+      reverse: false
+    }).setTween(tween_8).addTo($controller);
+    tween_9 = new TimelineMax().fromTo(".bites-spec__list", 1, {
+      y: '50px',
+      opacity: 0
+    }, {
+      y: 0,
+      opacity: 1
+    });
+    sene_9 = new ScrollMagic.Scene({
+      triggerElement: '.specs-slide',
+      reverse: false
+    }).setTween(tween_9).addTo($controller);
+    tween_10 = new TimelineMax().fromTo(".pets-petcube-bites .desktop-view img", 1, {
+      opacity: 0
+    }, {
+      opacity: 1
+    });
+    return sene_10 = new ScrollMagic.Scene({
+      triggerElement: '.pets-petcube-bites',
+      reverse: false
+    }).setTween(tween_10).addTo($controller);
+  };
+
+  $controller.scrollTo(function(target) {
+    return TweenMax.to(window, 0.5, {
+      scrollTo: {
+        y: target - $('#mini-menu').outerHeight(),
+        autoKill: true
+      }
+    });
+  });
+
+  $(document).ready(function() {
+    var $anchor_nav;
+    $('#next').click(function(e) {
+      var sectionIndex;
+      e.preventDefault();
+      sectionIndex = $('.bites-slider__hash li.current').index() + 1;
+      if (sectionIndex < 3) {
+        sectionIndex++;
+        return $controller.scrollTo('#sec' + sectionIndex);
+      }
+    });
+    $('#prev').click(function(e) {
+      var sectionIndex;
+      e.preventDefault();
+      sectionIndex = $('.bites-slider__hash li.current').index() + 1;
+      if (sectionIndex > 1) {
+        sectionIndex--;
+        return $controller.scrollTo('#sec' + sectionIndex);
+      }
+    });
+    $anchor_nav = $('.bites-slider__hash a');
+    return $anchor_nav.on('click', function(e) {
+      var id, target;
+      e.preventDefault();
+      target = $(this);
+      id = target.attr('href');
+      if (id !== null) {
+        if (id.length > 0) {
+          $controller.scrollTo(id);
+          if (window.history && window.history.pushState) {
+            return history.pushState('', document.title, id);
+          }
+        }
+      }
+    });
+  });
+
+  prevArrow = function(current) {
+    if (current === 1) {
+      return $('#prev').addClass('disabled');
+    } else {
+      return $('#prev').removeClass('disabled');
+    }
+  };
+
+  nextArrow = function(current) {
+    if (current === 3) {
+      return $('#next').addClass('disabled');
+    } else {
+      return $('#next').removeClass('disabled');
+    }
+  };
+
+  $counterContainer = $('.bites-slider__counter');
+
+  $hashNavItem = $('.bites-slider__hash li');
+
+  hashNavItemCount = $hashNavItem.length;
+
+  $(window).on('load', function() {
+    var currentSlide;
+    startScroll();
+    currentSlide = $('.bites-slider__hash li.current').index() + 1;
+    prevArrow(currentSlide);
+    nextArrow(currentSlide);
+    if (currentSlide !== 0) {
+      return $counterContainer.html('<span>' + 0 + currentSlide + '</span>' + '/' + '0' + hashNavItemCount);
+    } else {
+      return $counterContainer.html('<span>' + '0' + '1' + '</span>' + '/' + '0' + '3');
+    }
+  });
+
+  $(window).on('scroll', function() {
+    var currentSlide;
+    currentSlide = $('.bites-slider__hash li.current').index() + 1;
+    prevArrow(currentSlide);
+    nextArrow(currentSlide);
+    if (currentSlide !== 0) {
+      return $counterContainer.html('<span>' + 0 + currentSlide + '</span>' + '/' + '0' + hashNavItemCount);
+    }
+  });
+
+}).call(this);
