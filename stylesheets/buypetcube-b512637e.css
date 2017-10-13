@@ -8019,7 +8019,7 @@ a.banner.slim .icon-arrow-circle {
 /* Retina */
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 13/10), (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
   #newsletter .modal-box {
-    background-image: url("../../images/newsletter-popup/newsletter-bg-1@2x.jpg"); }
+    background-image: url("../images/newsletter-popup/newsletter-bg-1@2x.jpg"); }
 
   #newsletter.v2 .modal-box {
     background-image: url("../../images/newsletter-popup/newsletter-bg-2@2x.jpg"); }
