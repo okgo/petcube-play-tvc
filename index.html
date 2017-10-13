@@ -16,7 +16,7 @@ Petcube: Remote Wi-Fi Pet Camera | Pet Monitor System
 <link href='https://d1fje6txxik8rh.cloudfront.net/favicon.ico' rel='icon' type='image/x-icon'>
 <link href='https://d1fje6txxik8rh.cloudfront.net/apple-touch-icon.png' rel='shortcut icon' sizes='16x16' type='image/png'>
 <link href='https://d1fje6txxik8rh.cloudfront.net/apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
-<link href="stylesheets/all-15ed35ff.css" rel="stylesheet" />
+<link href="stylesheets/all-2b675511.css" rel="stylesheet" />
 </head>
 <body class='play-tvc'>
 <!-- Google Tag Manager (noscript) -->
@@ -30,7 +30,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a class='logo' href='/' id='homepage'></a>
 </div>
 <div class='button-container'>
-<a class='button' href='https://petcube.com/store/play/'>Buy now</a>
+<a class='button' data-ev-action='play buy now clicked' data-ev-category='buypetcube.com' href='https://petcube.com/store/play/' onclick='fbq(&#39;track&#39;, &#39;InitiateCheckout(buypetcube.com)&#39;, {content_name: &#39;Petcube Play&#39;});'>Buy now</a>
 </div>
 </div>
 </div>
@@ -53,7 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <i class='icon-play-circle inline-block'></i>
 Watch Video
 </a>
-<a class='button' href='https://petcube.com/store/play/'>buy now</a>
+<a class='button' data-ev-action='play buy now clicked' data-ev-category='buypetcube.com' href='https://petcube.com/store/play/' onclick='fbq(&#39;track&#39;, &#39;InitiateCheckout(buypetcube.com)&#39;, {content_name: &#39;Petcube Play&#39;});'>buy now</a>
 </div>
 </article>
 <ul class='advantages-list'><li class='inline-block'><i class='icon-warranty inline-block'></i><p>1 Year Warranty</p>
@@ -191,7 +191,7 @@ Follow your pet from room to room. You’ve got more options when you buy a 2-Pa
 <img src="images/play-tv/two-play.png" alt="#" width="946" height="544" />
 </span>
 <div class='buttons-container'><div class='inline-block'>
-<a class='button' href='https://petcube.com/store/bundle/play-2-pack/'>buy now</a>
+<a class='button' data-ev-action='play-2-pack buy now clicked' data-ev-category='buypetcube.com' href='https://petcube.com/store/bundle/play-2-pack/' onclick='fbq(&#39;track&#39;, &#39;InitiateCheckout(buypetcube.com)&#39;, {content_name: &#39;Petcube Play-2-Pack&#39;});'>buy now</a>
 </div><div class='inline-block'>
 <div class='affirm-block'>
 Buy now, pay over time
@@ -253,5 +253,40 @@ with zero interest
 
 <div class="windows"><div id="newsletter" class="modal-container gray"><div class="modal-box border-box slideInUpPopUp email"><h2 class="h1">Sign up, then save!</h2><form action="/subscribe/newsletter/petcube.com_form/" method="POST"><p style="font-size: 21px;">Get $10 Off your entire order now</p><br><input name="email" required="required" placeholder="Your email" type="email"><button type="submit" class="yellow pulse">Subscribe</button></form><a class="close element" href="#"></a></div><div class="modal-box border-box slideInUpPopUp pet-choose hidden"><h2 class="h1">Thanks for subscribing!</h2><p>For relevant tips, tell us what kind of pet(s) you have</p><form action="/subscribe/newsletter/petcube.com_form/" method="POST"><input name="email" type="hidden"><ul><li class="inline-block checkbox"><p><label for="type_cat">Cat</label></p><input id="type_cat" name="petType[]" value="Cat" type="checkbox"><label for="type_cat"></label></li><li class="inline-block checkbox"><p><label for="type_dog">Dog</label></p><input id="type_dog" name="petType[]" value="Dog" type="checkbox"><label for="type_dog"></label></li><li class="inline-block checkbox"><p><label for="type_other">Other</label></p><input id="type_other" name="petType[]" value="Other" type="checkbox"><label for="type_other"></label></li></ul><button type="submit" class="yellow pulse">No pets</button></form><a class="close element" href="#"></a></div><div class="modal-box border-box slideInUpPopUp thanks hidden"><h2 class="h1">Thanks for subscribing!</h2><p>We'll keep you posted</p><a class="close element" href="#"></a></div></div><div id="video-popup" class="embed-popup modal-container gray" style="display: none;"><div class="modal-box top"><a class="close" href="#"></a><div class="video"><div id="popup-player"></div></div></div></div><div id="ru-order-popup" class="embed-popup modal-container"><div class="modal-box border-box"><img data-rjs="2" src="/images/release/backgrounds/ru-popup-bg.png?v=0.8.1"><div class="modal-box-content"><a class="close" href="#"></a><p>buy_popup.text</p><p class="gray">buy_popup.phones</p><p class="gray">buy_popup.contacts</p><p>buy_popup.foot</p></div></div></div><div id="post-ks-popup" class="embed-popup modal-container gray"><div class="modal-box border-box sign"><img src="/images/post-kickstarter/play-bites-sign@2x.jpg?v=0.8.1"><div class="modal-box-content"><a class="close" href="#"></a><br><h2 class="h1">Please <br>Leave Your Email</h2><br><br><form id="postksform" action="/signup_petcubeplay_waitlist/"><input name="email" required="required" placeholder="Your email" type="email"><button type="submit" class="yellow pulse">SIGN UP</button></form></div></div><div class="modal-box border-box thanks" style="display: none;"><img src="/images/post-kickstarter/play-bites-thanks@2x.jpg?v=0.8.1"><div class="modal-box-content"><a class="close" href="#"></a><br><h2 class="h1">Thank you!</h2><p>You'll be notified when Petcube Bites is available for pre-order.</p></div></div></div><div id="feedback-popup" class="embed-popup modal-container gray"><div class="modal-box"><a class="close" href="#"></a><div class="embed"></div></div></div><div id="alert" class="modal-container"><div class="modal-box"><p class="title"></p><p class="text"></p><button class="yellow">Okay</button></div></div></div>
 <script src="javascripts/bites-treat-cam-17d2cad6.js"></script>
+<script src="javascripts/vendor/modernizr-e6fcd2ba.js"></script>
+<script src="javascripts/vendor/analytics-d704ebd6.js"></script>
+  <!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T4PLLJ');</script><!-- End Google Tag Manager --><!-- Google analitycs --><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35055273-1', 'auto');
+  ga('require', 'GTM-P6GJQLM');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- End Google analitycs -->
+<!-- Facebook Pixel Code --><script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '327927947396949');
+  fbq('track', "PageView");</script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=327927947396949&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Segment --><script type="text/javascript">
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+      analytics.load("QgHcay89SmREtP0sEreAbVjCaroAxZ5V");
+      analytics.page();
+  }}();
+</script>
+<!-- End Segment -->
 </body>
 </html>
