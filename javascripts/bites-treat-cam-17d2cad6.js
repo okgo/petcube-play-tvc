@@ -16036,7 +16036,7 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
       triggerElement: '.give-more-love',
       triggerHook: 0,
       offset: -100,
-      duration: $('.bites-slider__container .item').outerHeight() * 4.4
+      duration: $('.bites-slider__container').height() - $('.bites-slider__hash').outerHeight()
     }).setPin('.bites-slider__hash').on('progress', function(e) {
       var progress;
       progress = e.progress * 100 + '%';
@@ -16076,6 +16076,7 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
     });
     scene_7 = new ScrollMagic.Scene({
       triggerElement: '.give-more-love',
+      triggerHook: .8,
       reverse: false
     }).setTween(tween_7).addTo($controller);
     tween_8 = new TimelineMax().fromTo("#sec2 img", 1, {
@@ -16091,6 +16092,7 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
     });
     scene_8 = new ScrollMagic.Scene({
       triggerElement: '#sec2',
+      triggerHook: .8,
       reverse: false
     }).setTween(tween_8).addTo($controller);
     tween_9 = new TimelineMax().fromTo("#sec3 img", 1, {
@@ -16112,6 +16114,7 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
     });
     scene_9 = new ScrollMagic.Scene({
       triggerElement: '#sec3',
+      triggerHook: .8,
       reverse: false
     }).setTween(tween_9).addTo($controller);
     tween_10 = new TimelineMax().fromTo("#sec4 img", 1, {
@@ -16133,6 +16136,7 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
     });
     scene_10 = new ScrollMagic.Scene({
       triggerElement: '#sec4',
+      triggerHook: .8,
       reverse: false
     }).setTween(tween_10).addTo($controller);
     tween_11 = new TimelineMax().fromTo("#sec5 img", 1, {
@@ -16154,6 +16158,7 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
     });
     scene_11 = new ScrollMagic.Scene({
       triggerElement: '#sec5',
+      triggerHook: .8,
       reverse: false
     }).setTween(tween_11).addTo($controller);
     tween_12 = new TimelineMax().fromTo(".beauty-inside-out .h1", .5, {

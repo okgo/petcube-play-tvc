@@ -22524,7 +22524,7 @@ header.manage .header-menu {
     width: 58px;
     background-image: url(../images/bites-tv/bgr.png); }
 .bites-slider__container .testimonial-item {
-  padding-top: 35px;
+  padding-top: 34px;
   display: inline-block;
   vertical-align: top;
   width: 36%;
@@ -22593,7 +22593,8 @@ header.manage .header-menu {
   .bites-slider__wrapper img,
   .bites-slider__wrapper video {
     width: 100%;
-    height: auto; }
+    height: auto;
+    vertical-align: top; }
 
 .bites-slider__counter {
   position: absolute;
