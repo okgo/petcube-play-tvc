@@ -26,6 +26,101 @@
           type='image/png'>
     <link href='https://d1fje6txxik8rh.cloudfront.net/apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
     <link href="stylesheets/all-2b675511.css" rel="stylesheet"/>
+
+    <style>
+        .play-tvc header .header-menu {
+            top: 60px;
+        }
+        .banner.slim {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: block;
+            background-color: #f8f8f8;
+            border-bottom: 2px solid #f1f1f1;
+            overflow: hidden;
+            z-index: 99;
+        }
+        .banner.slim.helloween-sale {
+            height: 60px;
+            border: none;
+            background: #97290d;
+        }
+        .banner.slim.helloween-sale .content {
+            height: 100%;
+            background: url(https://d1fje6txxik8rh.cloudfront.net/images/banners/helloween/bat-left.svg) no-repeat,
+                        url(https://d1fje6txxik8rh.cloudfront.net/images/banners/helloween/bat-right.svg) no-repeat,
+                        url(https://d1fje6txxik8rh.cloudfront.net/images/banners/helloween/image-bg.jpg) no-repeat;
+            background-position: left 7px top 12px, right 0 top 7px, left 0 top 0;
+            background-size: auto, auto, auto 60px;
+        }
+        .banner.slim.helloween-sale .content:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 200%;
+            left: -200%;
+            background-color: #b43c1c;
+        }
+        .banner.slim.helloween-sale .sale-text,
+        .banner.slim.helloween-sale .limited-time-text {
+            position: absolute;
+            overflow: auto;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+        }
+        .banner.slim.helloween-sale .sale-text {
+            left: 106px;
+        }
+        .banner.slim.helloween-sale .limited-time-text {
+            right: 10%;
+        }
+        @media only screen and (max-width: 980px) {
+             .banner.slim.helloween-sale .sale-text,
+             .banner.slim.helloween-sale .limited-time-text {
+                height: 12px;
+            }
+        }
+        @media only screen and (max-width: 860px) {
+             .banner.slim.helloween-sale .sale-text,
+             .banner.slim.helloween-sale .limited-time-text {
+                height: 8px;
+            }
+        }
+        @media only screen and (max-width: 780px) {
+             .banner.slim.helloween-sale .content {
+                height: 100%;
+                background: url("https://d1fje6txxik8rh.cloudfront.net/images/banners/helloween/mobile-bg.jpg") no-repeat;
+                background-size: cover;
+                text-align: center;
+            }
+             .banner.slim.helloween-sale .sale-text,
+             .banner.slim.helloween-sale .limited-time-text {
+                position: relative;
+                left: auto;
+                right: auto;
+                margin-top: 10px;
+            }
+             .banner.slim.helloween-sale .sale-text {
+                margin-right: 8px;
+            }
+        }
+        @media only screen and (max-width: 640px) {
+            .banner.slim.helloween-sale {
+                height: 30px;
+            }
+            .play-tvc header .header-menu {
+                top: 30px;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+             .banner.slim.helloween-sale .sale-text,
+             .banner.slim.helloween-sale .limited-time-text {
+                height: 7px;
+            }
+        }
+    </style>
 </head>
 <body class='play-tvc'>
 <!-- Google Tag Manager (noscript) -->
@@ -34,6 +129,16 @@
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<a href="https://petcube.com/store/play/">
+    <div class="banner slim helloween-sale">
+        <div class="content padding">
+            <img class="sale-text" src="https://d1fje6txxik8rh.cloudfront.net/images/banners/helloween/sale-text.svg">
+            <img class="limited-time-text" src="https://d1fje6txxik8rh.cloudfront.net/images/banners/helloween/limited-time-text.svg">
+        </div>
+    </div>
+</a>
+
 <header class='header main'>
     <div class='header-menu'>
         <div class='content table'>
